@@ -146,6 +146,9 @@
       <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>editbin /SUBSYSTEM:CONSOLE $(OUTDIR)$(ProjectName).exe</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
@@ -169,10 +172,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="monitor_helper.cpp" />
     <ClCompile Include="MTScratchpadWMTouch.cpp" />
     <ClCompile Include="Stroke.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="monitor_helper.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Stroke.h" />
   </ItemGroup>

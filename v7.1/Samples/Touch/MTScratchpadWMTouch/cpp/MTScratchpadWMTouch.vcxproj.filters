@@ -21,12 +21,18 @@
     <ClCompile Include="Stroke.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="monitor_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Stroke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monitor_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
